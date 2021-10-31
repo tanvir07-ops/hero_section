@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- for google font: -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Hero Section</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html {
+        font-family: "Rubik", sans-serif;
+        color: 444;
+      }
+
+      .container {
+        width: 1200px;
+        margin: 0 auto;
+      }
+      nav {
+        display: flex;
+        justify-content: space-between;
+        font-size: 20px;
+        font-weight: 700;
+      }
+      h1 {
+        font-size: 52px;
+        margin-bottom: 32px;
+        line-height: 1.05;
+      }
+      h2 {
+        font-size: 44px;
+        margin-bottom: 48px;
+      }
+      p {
+        font-size: 20px;
+        line-height: 1.6;
+        margin-bottom: 48px;
+      }
+      header {
+        height: 100vh;
+        position: relative;
+
+        /* eikhane height 100vh er means holo amra screen er height er 100% ei dekhbo header tar pore 100% height sesh hole dekhbo section tag er modde tag gula */
+
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+          url(hero1.jpeg) no-repeat center center/cover;
+        width: 100%;
+        color: #fff;
+
+        /* background image ti ke dark(overlay) korar jonne background-image e liner-gradient use kora laagbe: */
+      }
+
+      .btn:link,
+      .btn:visited {
+        background-color: #e67e22;
+        display: inline-block;
+        padding: 16px 32px;
+        border-radius: 100px;
+        color: #fff;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 600;
+      }
+
+      section {
+        padding: 96px 0;
+      }
+
+      .header-container {
+        width: 1200px;
+
+        /* ei header-container er text majkahane anar jonne nicher code gula: */
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -60%);
+      }
+      .header-container-inner {
+        width: 50%;
+      }
+
+      .logo img {
+        height: 100px;
+        width: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="container">
+        <div class="logo">
+          <img src="logo.png" alt="" />
+        </div>
+        <div>NAVIGATION</div>
+      </nav>
+
+      <div class="header-container container">
+        <div class="header-container-inner">
+          <h1>Tanvir Rifat is very passionate and very careful learner!</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error sunt
+            sapiente laudantium eveniet natus. Magnam, repudiandae debitis.
+            Fugiat, officiis dicta?
+          </p>
+          <a href="#" class="btn">See Tanvir Rifat</a>
+        </div>
+      </div>
+    </header>
+
+    <section class="container">
+      <h2>Some Random Heading</h2>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit vero
+        sapiente ipsa aliquam distinctio amet, voluptatum error ipsam dolorum
+        ratione recusandae iure, enim eius nulla odit, eaque corporis quo illo.
+      </p>
+    </section>
+  </body>
+</html>
